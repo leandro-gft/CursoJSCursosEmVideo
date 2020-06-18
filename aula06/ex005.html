@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(156, 169, 197);
+            color: rgb(0, 0, 0);
+            font: normal 25pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var salario = 1600.5
+        document.write(`Colocando com duas casas decimais: ${salario.toFixed(2)} </br>`)
+        document.write(`Substituindo ponto por virgula: ${salario.toFixed(2).replace('.',',')} </br>`)
+        document.write(`Apresentando como moeda: ${salario.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})}`)
+    </script>
+</body>
+</html>
